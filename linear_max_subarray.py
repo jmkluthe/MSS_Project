@@ -39,8 +39,8 @@ def linear_max_subarray(arry):
 #         return True
 #     else:
 #         return False
-#
-#
+
+
 # test = []
 # test_answer = []
 # test.append([31, -41, 59, 26, -53, 58, 97, -93, -23, 84])
