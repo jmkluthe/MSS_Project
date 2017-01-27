@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 This algorithm relies on the fact that for each subarray ar A[0 ... n - 1] that has the
 form S[0 ... j + 1], where j + 1 <= n - 1, there are three possible locations for a
@@ -15,8 +17,6 @@ larger than the current max, we replace the value of max with it, and the values
 starting and ending indexes for max with the appropriate values.
 """
 
-#add comment
-
 def linear_max_subarray(arry):
     max = max_to_j = arry[0]
     beg_max = end_max = beg_mtj = 0
@@ -31,22 +31,22 @@ def linear_max_subarray(arry):
             max = max_to_j
             beg_max = beg_mtj
             end_max = j
-    return max, beg_max, end_max
+    return max, arry[beg_max:end_max]
 
 
-def test_linear_max_subarray(test, test_answer):
-    if linear_max_subarray(test) == test_answer:
-        return True
-    else:
-        return False
-
-
-test = []
-test_answer = []
-test.append([31, -41, 59, 26, -53, 58, 97, -93, -23, 84])
-test_answer.append((187, 2, 6))
-for i in range(len(test)):
-    if test_linear_max_subarray(test[i], test_answer[i]):
-        print("Pass")
-    else:
-        print("Fail")
+# def test_linear_max_subarray(test, test_answer):
+#     if linear_max_subarray(test) == test_answer:
+#         return True
+#     else:
+#         return False
+#
+#
+# test = []
+# test_answer = []
+# test.append([31, -41, 59, 26, -53, 58, 97, -93, -23, 84])
+# test_answer.append((187, 2, 6))
+# for i in range(len(test)):
+#     if test_linear_max_subarray(test[i], test_answer[i]):
+#         print("Pass")
+#     else:
+#         print("Fail")
