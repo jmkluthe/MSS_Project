@@ -34,13 +34,13 @@ def linear_max_subarray(arry):
     return max, arry[beg_max:end_max]
 
 
-# def test_linear_max_subarray(test, test_answer):
-#     if linear_max_subarray(test) == test_answer:
-#         return True
-#     else:
-#         return False
-#
-#
+def test_linear_max_subarray(test, test_answer):
+    if linear_max_subarray(test) == test_answer:
+        return True
+    else:
+        return False
+
+
 # test = []
 # test_answer = []
 # test.append([31, -41, 59, 26, -53, 58, 97, -93, -23, 84])
