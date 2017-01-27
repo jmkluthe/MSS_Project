@@ -31,22 +31,5 @@ def linear_max_subarray(arry):
             max = max_to_j
             beg_max = beg_mtj
             end_max = j
-    return max, arry[beg_max:end_max]
+    return arry[beg_max:end_max+1], max
 
-
-# def test_linear_max_subarray(test, test_answer):
-#     if linear_max_subarray(test) == test_answer:
-#         return True
-#     else:
-#         return False
-
-
-# test = []
-# test_answer = []
-# test.append([31, -41, 59, 26, -53, 58, 97, -93, -23, 84])
-# test_answer.append((187, 2, 6))
-# for i in range(len(test)):
-#     if test_linear_max_subarray(test[i], test_answer[i]):
-#         print("Pass")
-#     else:
-#         print("Fail")
