@@ -47,5 +47,5 @@ def test_functions():
     print('\nWriting answers to file test_answer.txt')
     write_answers('test_answer.txt', answers)
 
-
-test_functions()
+if __name__ == "__main__":
+    test_functions()
