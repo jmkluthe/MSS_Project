@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+
+from random import randint
+from time import time
+from alg1_alg2 import maxSubarrayEnum as MSE, bettMaxSubarrayEnum as BMSE
+from alg3 import alg3
+from linear_max_subarray import linear_max_subarray as LMS
+from read_and_write_data import write_csv
+
+
+def generate_array(n):
+    arry = []
+    for i in range(n):
+        arry.append(randint(-100, 100))
+    return arry
+
+
+def average_time(func, arry):
+    sum = 0
+    for i in range(10):
+        t = time()
+        func(arry)
+        sum += time() - t
+    return sum/10
+
+
+def get_times(func, n, step):
+    times = []
+    for i in range(1, n, step):
+        arry = generate_array(i)
+        time = average_time(func, arry)
+        times.append((time, i))
+    return times
+
+
+def main():
+    write_csv('alg1.csv', get_times(MSE, 101, 9))
+    write_csv('alg2.csv', get_times(BMSE, 101, 9))
+    write_csv('alg3.csv', get_times(alg3, 101, 9))
+    write_csv('alg4.csv', get_times(LMS, 101, 9))
+
+
+if __name__ == '__main__':
+    main()

@@ -56,24 +56,24 @@ with open('MSS_TestProblems.txt') as f:
         print(bettMSA)
 '''
 
-randNumLst =[]
-userInput = int(input("How many inputs?"))
-for i in range(10):
-    del randNumLst[:]
-    for j in range(userInput):
-        randNum = random.randrange(-100, 100)
-        randNumLst.append(randNum)
-    '''
-    tStart = time.time()
-    maxSA = maxSubarrayEnum(randNumLst)
-    tStop = time.time()
-    print("Time Alg1:", tStop - tStart)
-    '''
-    #print(maxSA)
-    tStart = time.time()
-    bettMSA = bettMaxSubarrayEnum(randNumLst)
-    tStop = time.time()
-    print("Time Alg2:", tStop - tStart)
-    #print(bettMSA)
-    
-
+# randNumLst =[]
+# userInput = int(input("How many inputs?"))
+# for i in range(10):
+#     del randNumLst[:]
+#     for j in range(userInput):
+#         randNum = random.randrange(-100, 100)
+#         randNumLst.append(randNum)
+#     '''
+#     tStart = time.time()
+#     maxSA = maxSubarrayEnum(randNumLst)
+#     tStop = time.time()
+#     print("Time Alg1:", tStop - tStart)
+#     '''
+#     #print(maxSA)
+#     tStart = time.time()
+#     bettMSA = bettMaxSubarrayEnum(randNumLst)
+#     tStop = time.time()
+#     print("Time Alg2:", tStop - tStart)
+#     #print(bettMSA)
+#
+#

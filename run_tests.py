@@ -4,7 +4,10 @@
 answers to the known correct answers """
 
 from read_and_write_data import read_problems as rp, read_answers as ra
-from linear_max_subarray import linear_max_subarray as lms
+from alg1_alg2 import maxSubarrayEnum as MSE, bettMaxSubarrayEnum as BMSE
+from alg3 import alg3
+from linear_max_subarray import linear_max_subarray as LMS
+
 
 def test_function(func):
     test_problems = rp('MSS_TestProblems.txt')
@@ -21,3 +24,6 @@ def test_function(func):
 
 if __name__ == "__main__":
     test_function(lms)
+    test_function(MSE)
+    test_function(BMSE)
+    test_function(alg3)

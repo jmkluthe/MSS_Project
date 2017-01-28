@@ -38,6 +38,6 @@ def alg3(A):#helper function
     return(A[result[1]:result[2]], result[0])
 
 
-myArray=[31, -41, 59, 26, -53, 58, 97, -93, -23, 84]
-
-print alg3(myArray)
+# myArray=[31, -41, 59, 26, -53, 58, 97, -93, -23, 84]
+#
+# print alg3(myArray)

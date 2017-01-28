@@ -47,5 +47,12 @@ def test_functions():
     print('\nWriting answers to file test_answer.txt')
     write_answers('test_answer.txt', answers)
 
+
+def write_csv(filename, arry):
+    with open(filename, 'w') as fout:
+        for item in arry:
+            fout.write('{},{}\n'.format(item[0], item[1]))
+
+
 if __name__ == "__main__":
     test_functions()
