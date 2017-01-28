@@ -23,7 +23,7 @@ def test_function(func):
 
 
 if __name__ == "__main__":
-    test_function(lms)
+    test_function(LMS)
     test_function(MSE)
     test_function(BMSE)
     test_function(alg3)

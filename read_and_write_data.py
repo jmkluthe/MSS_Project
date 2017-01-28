@@ -9,8 +9,10 @@ def read_problems(filename):
     return problems
 
 
-def write_answers(filename, answers):
-    with open(filename, 'w') as fout:
+def write_answers(filename, answers, title = None):
+    with open(filename, 'a+') as fout:
+        if title != None:
+            fout.write(title + '\n')
         for i in range(len(answers)):
             fout.write(' '.join(str(j) for j in answers[i][0]) + '\n')
             fout.write(' '.join(str(j) for j in answers[i][1]) + '\n')
@@ -27,6 +29,7 @@ def read_answers(filename):
             sum = int(contents[i+2])
             answers.append((prob_array, answer_array, sum))
     return answers
+
 
 def test_functions():
     # test read_problems
