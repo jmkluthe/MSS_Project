@@ -1,15 +1,21 @@
 # MSS_Project
 
 Authors:
-  Joshua Kluthe
-    - linear_max_subarray.py
-    - read_and_write_data.py
-    - run_project.py
-    - run_tests.py
-  Rohan Gokhale
-    - alg3.py
-  Alan Seims
-    - alg1_alg2.py
+  <p>Joshua Kluthe</p>
+  <ul>
+    <li>linear_max_subarray.py
+    <li>read_and_write_data.py
+    <li>run_project.py
+    <li>run_tests.py
+  </ul>
+  <p>Rohan Gokhale</p>
+  <ul>
+    <li>alg3.py
+  </ul>
+  <p>Alan Seims<p>
+  <ul>
+    <li>alg1_alg2.py
+  </ul>
     
 This project uses three different algorithms to solve the maximum sum subarray problem.
 
